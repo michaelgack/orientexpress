@@ -2,9 +2,10 @@
   "name": "orientexpress",
   "version": "1.0.0",
   "description": "express playground",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "homepage": "https://github.com/michaelgack/orientexpress#readme",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.28.1"
   }
 }
