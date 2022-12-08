@@ -10,9 +10,9 @@ app.get('/', (req, res) => {
     res.json({"key": "value"});
 })
 
-app.get('/api/:id', (req, res, next) => {
+app.get('/screenshot/:name', (req, res, next) => {
     try {
-        res.send(`${req.params.id}, ${req.query.toString()}`)
+        res.send(`<img src="/screenshots/${req.params.name}.png" width=1028 alt="playwright screenshot">`)
     } catch(e) {
         next()
     }
