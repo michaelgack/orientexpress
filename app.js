@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 app.get('/screenshot/:name', (req, res, next) => {
     try {
-        res.send(`<img src="/screenshots/${req.params.name}.png" width=1028 alt="playwright screenshot">`)
+        res.send(`<img src="/images/mobile/${req.params.name}.png" width=1028 alt="playwright screenshot">`)
     } catch(e) {
         next()
     }

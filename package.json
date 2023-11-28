@@ -24,5 +24,8 @@
   "homepage": "https://github.com/michaelgack/orientexpress#readme",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.28.1"
   }
 }
